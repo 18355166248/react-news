@@ -1,0 +1,257 @@
+html {
+  overflow-y: scroll;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+html * {
+  outline: 0;
+  -webkit-text-size-adjust: none;
+  -webkit-tap-highlight-color: transparent;
+  /*设置所有的盒子的宽度以边框开始计算*/
+  -webkit-box-sizing: border-box;
+  /*要兼容 webkit 浏览器内核厂商 这种情况一般是老的移动端浏览器*/
+  box-sizing: border-box;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+html,
+body {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  color: #5a5a5a;
+  font-family: "Microsoft YaHei", Helvetica, STHeiTi, sans-serif !important;
+}
+
+body::-webkit-scrollbar {
+  width: 0px
+}
+
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+legend,
+input,
+textarea,
+p,
+blockquote,
+th,
+td,
+hr,
+button,
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  /*在移动端特殊的设置*/
+}
+
+input,
+select,
+textarea {
+  font-size: 100%;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+fieldset,
+img {
+  border: 0;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+th,
+var {
+  font-style: normal;
+  font-weight: 500;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+caption,
+th {
+  text-align: left;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-weight: 500;
+  text-align: center;
+}
+
+ins,
+a {
+  text-decoration: none;
+  color: #5a5a5a;
+}
+
+a:hover {
+  color: #5a5a5a;
+}
+
+input,
+textarea {
+  border: none;
+  outline: none;
+  resize: none;
+}
+
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+.clearfix::after,
+.clearfix::before {
+  content: "";
+  line-height: 0;
+  height: 0;
+  display: block;
+  visibility: hidden;
+  clear: both;
+}
+
+.w100 {
+  width: 100%;
+}
+
+.w33 {
+  width: 33.3333%;
+}
+
+.w50 {
+  width: 50%;
+}
+
+.w25 {
+  width: 25%;
+}
+
+.hide {
+  display: none !important;
+}
+
+/*单行溢出*/
+.one-txt-cut {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+/*多行溢出 手机端使用*/
+.txt-cut {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+}
+
+.txt-num {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+/* 显示隐藏 */
+.hidden {
+  display: none;
+}
+
+/*居中对齐*/
+.common-position {
+  overflow: auto;
+  margin: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.over-flow {
+  overflow: hidden;
+}
+
+.text-align {
+  text-align: center;
+}
+
+[aspectratio] {
+  position: relative;
+}
+
+[aspectratio]::before {
+  content: '';
+  display: block;
+  width: 1px;
+  margin-left: -1px;
+  height: 0;
+}
+
+[aspectratio-content] {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.marginAuto {
+  margin: 0 auto;
+}
