@@ -1,5 +1,5 @@
 import React from "react";
-import SortTable from "./sortTable";
+import SortTable from "./sortTable/sortTable";
 
 function Home() {
   return (

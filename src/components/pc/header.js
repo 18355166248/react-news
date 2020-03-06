@@ -57,7 +57,6 @@ class PcHeader extends Component {
             </Menu.Item>
           </Menu>
         </Col>
-        <Col span={2}>col-8</Col>
       </Row>
     );
   }

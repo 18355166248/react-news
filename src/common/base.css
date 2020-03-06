@@ -27,7 +27,7 @@ body {
 }
 
 body::-webkit-scrollbar {
-  width: 0px
+  width: 0px;
 }
 
 body,
@@ -235,7 +235,7 @@ textarea {
 }
 
 [aspectratio]::before {
-  content: '';
+  content: "";
   display: block;
   width: 1px;
   margin-left: -1px;
@@ -254,4 +254,14 @@ textarea {
 
 .marginAuto {
   margin: 0 auto;
+}
+
+body > .ant-table-row {
+  display: flex;
+  background-color: #fff;
+  box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.05);
+}
+
+body > .ant-table-row > td {
+  padding: 16px;
 }
